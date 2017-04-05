@@ -3,7 +3,6 @@ angular.module('shopApp').controller('shopCtrl', function($scope, shopService) {
   $scope.getProducts = function() {
     shopService.getData().then(function(response) {
       $scope.products = response;
-      console.log(response);
     })
   }
   $scope.test = false;
